@@ -1,0 +1,448 @@
+@charset "utf-8";
+
+#wrap {}
+
+#top_bt{
+    width: 50px;
+    height: 50px;
+    background-color: dimgray;
+    color: white;
+    line-height: 45px;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    right: 150px;
+    top: 715px;
+    border-radius: 50%;
+    z-index: 500;
+    font-size: 12px;
+}
+
+#top_bt > a{
+    display: block;
+}
+
+#top_bt a:hover{
+    text-decoration: underline;
+}
+
+
+#header {
+    height: 113px;
+    /* background-color: lightblue; */
+    position: absolute;
+    width: 100%;
+}
+
+.head_inner {
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: #ddd; */
+}
+
+.head_topmenu {
+    height: 48px;
+    /* background-color: antiquewhite; */
+}
+
+.head_topmenu ul {
+    text-align: right;
+}
+
+.head_topmenu ul li {
+    display: inline-block;
+}
+
+.head_topmenu ul li a {
+    display: block;
+    line-height: 48px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: white;
+}
+
+.head_topmenu ul li a:hover {}
+
+.gnb {
+    height: 65px;
+    /* background-color: rebeccapurple; */
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+.logo a {
+    display: block;
+    width: 112px;
+    height: 45px;
+    background: url(../images/ico-zeus-logo.png) no-repeat;
+    background-position: center top;
+    text-indent: -9999px;
+}
+
+.logo a:hover {}
+
+
+.nav {
+    float: right;
+}
+
+.nav ul {}
+
+.nav li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.nav li a {
+    color: white;
+    display: block;
+    line-height: 65px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.nav li a:hover {}
+
+#header:hover {
+    background-color: white;
+}
+
+#header:hover .logo a {
+    background-position: center bottom;
+}
+
+#header:hover .head_topmenu a {
+    color: #888;
+}
+
+#header:hover .gnb a {
+    color: #333;
+}
+
+
+
+/* container 영역 */
+
+#container {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+/* img_slide 영역 */
+
+.img_slide {
+    height: 710px;
+}
+
+.img_slide a {}
+
+.img_slide a img {}
+
+
+
+
+/* <!-- ZEUS 클래식 여행 영역 --> */
+
+.classic {
+    padding-top: 80px;
+    overflow: hidden;
+    background-image: linear-gradient(#fff 0%, #fff 60%, #eee 50%, #eee 100%);
+}
+
+.classic h1 {
+    text-align: center;
+}
+
+.classic_list {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.classic_list li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.classic_list li a {
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.classic_list li a:hover {
+    border-bottom: 1.5px solid gray;
+    font-weight: bold;
+}
+
+
+/* classic_wrap 영역 */
+
+.classic_wrap {
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.classic_wrap ul {}
+
+.classic_wrap li {
+    background-color: antiquewhite;
+    float: left;
+    width: 384px;
+    height: 520px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.classic_wrap li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.classic_wrap li a .top {
+    width: 60px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 0;
+    margin-left: 50px;
+}
+
+.classic_wrap li a .top span {
+    font-size: 10px;
+    display: block;
+    font-weight: 100;
+    /* text-transform: uppercase; */
+}
+
+.c_text {
+    width: 345px;
+    height: 260px;
+    background-color: transparent;
+    text-align: justify;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%);
+    transition: all 0.4s ease-in-out;
+    color: white;
+}
+
+.c_text h3 {
+    margin-bottom: 25px;
+    line-height: 1.5;
+    letter-spacing: -1.5px;
+}
+
+
+.c_text p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.7;
+}
+
+.c_text p.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.c_text p.price span {
+    font-size: 14px;
+}
+
+
+.classic_wrap li:hover .c_text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    color: black;
+
+}
+
+.classic_wrap li a:hover .c_text h3 {
+    color: #333;
+}
+
+.classic_wrap li a:hover .c_text p {
+
+    color: #666;
+}
+
+.classic_wrap li a:hover .c_text p.price {
+    color: #000;
+}
+
+body {
+    height: 3000px;
+}
+
+
+
+
+/* <!-- ZEUS 스페셜 테마 영역 --> */
+
+.c_wrap_01 {
+    background-image: url(../images/classic01.jpg);
+
+}
+
+.c_wrap_02 {
+    margin: 0 24px;
+    background-image: url(../images/classic02.jpg);
+
+}
+
+.c_wrap_03 {
+    background-image: url(../images/classic03.jpg);
+}
+
+.s_wrap_01 {
+    background-image: url(../images/spacial01.jpg);
+}
+
+.s_wrap_02 {
+    background-image: url(../images/spacial02.jpg);
+    margin: 0 24px;
+}
+
+.s_wrap_03 {
+    background-image: url(../images/spacial03.jpg);
+}
+
+/* 공지사항 영역 */
+
+.notice {
+    width: 100%;
+    padding: 50px 0 80px;
+    overflow: hidden;
+}
+
+.notice ul {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.notice ul li {
+    float: left;
+    width: calc(100% / 4);
+    text-align: center;
+    border-right: 1px solid #d8d8d8;
+}
+
+.notice ul li:last-child {
+    border-right: none !important;
+}
+
+.notice ul li a {
+    margin-bottom: 10px;
+}
+
+.notice ul li span {
+    display: block;
+    width: 32px;
+    height: 34px;
+    margin: 10px auto;
+    background-image: url(../images/spr_icn.png);
+    background-position: -204px -254px;
+    text-indent: -9999px;
+
+}
+
+.notice ul li span.n_2 {
+    background-position: -235px -254px;
+}
+
+.notice ul li span.n_3 {
+    background-position: -270px -254px;
+}
+
+.notice ul li span.n_4 {
+    background-position: -302px -254px;
+}
+
+.notice ul li p {
+    font-size: 12.5px;
+    margin-top: 10px;
+    line-height: 1.7;
+    letter-spacing: 2;
+}
+
+/* footer 영역 */
+#footer {
+    width: 1920px;
+    margin: 0 auto;
+    border-top: 1px solid #d8d8d8;
+    font-size: 12px;
+}
+
+.f_inner {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.foot_menu {
+    float: left;
+}
+
+.foot_menu li{
+    display: inline-block;
+}
+
+.foot_menu li a{
+    display: block;
+    padding: 5px;
+}
+
+.foot_menu li:nth-child(1) a{
+    padding-left: 0 !important;
+}
+
+.foot_tel {
+    float: right;
+    margin-right: 300px;
+}
+
+.hana {
+    clear: both;
+    padding-top: 20px;
+}
+
+.hana li{}
+.hana li , .address  li, .data li{
+    display: inline-block;
+    padding: 5px 0;
+    color: #444;
+}
+
+
+.foot_p1, .foot_p2  {
+    line-height: 2;
+}
+
+.foot_p1 {
+    margin-top: 10px;
+}
+
+.copy {
+    padding: 30px 0;
+}
+
+.f_logo {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
